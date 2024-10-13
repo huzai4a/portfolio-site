@@ -2,7 +2,7 @@ import React from 'react'
 
 const Landing = () => {
   return (
-    <div className="absolute inset-0 flex items-center justify-center flex-col z-0">
+    <div className="flex items-center justify-center flex-col min-h-full">
           <h1 className="lg:text-7xl  font-bold text-gray-900 dark:text-white-50">
             hi, i'm <span className='dark:text-purple-100'>huzaifa</span>.
           </h1>
