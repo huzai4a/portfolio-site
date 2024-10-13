@@ -20,6 +20,7 @@ const config: Config = {
           150: '#c7c8c1',
           200: '#aeafa9'
         },
+        gray: '#6E7D8B',
         'beige': '#d2cca1', // maybe change?
         purple: {
           //50 light, 100 darker
