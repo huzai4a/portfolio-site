@@ -10,7 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         // all the 10 values
-        'navy': '#0a192f',
+        'navy':{
+          50: '#0a192f',
+          100: '#060E1A'
+        },
         white: '#f9fbf2',
         'beige': '#d2cca1', // maybe change?
         purple: {
