@@ -10,7 +10,7 @@ const Header = () => {
     // linkedin:FaLinkedin 
     // mail: IoMdMail 
     // resume: TbFileCv  
-    <div className="flex justify-end items-center pt-10 pr-5">
+    <div className="flex justify-end items-center pt-5 pr-5">
         <div className="flex text-white-50 z-10">
             <a href="mailto:huzaifa_syed78@hotmail.com" data-rb-event-key="mailto:huzaifa_syed78@hotmail.com" className="px-2 hover:text-purple-100" title='email'>
                 <IoMdMail size={'25px'} />
