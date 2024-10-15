@@ -1,31 +1,64 @@
 import { aboutItems } from '@/data'
 import Image from 'next/image'
 import React from 'react'
+import { TbPointFilled } from 'react-icons/tb'
 
 const About = () => {
   return (
-    <div className="border-2 border-yellow-400 border-solid grid grid-cols-1 sm:grid-cols-2 gap-4 text-white-50" id="about">
+    <div className="grid grid-cols-1 sm:grid-cols-12 text-gray-50 h-full" id="about">
   {/* Title Row (Spans Full Width) */}
-  <div className="col-span-2 border-2 border-green-500 border-solid">
-    <h1 className="border-2 border-red-500 border-solid font-bold px-20 text-5xl">
+  <div className="col-span-12">
+    <h1 className="font-bold pl-5 lg:pl-20 text-5xl">
       {aboutItems.header}
     </h1>
   </div>
 
   {/* First Column with Text */}
-  <div className="flex flex-col justify-center m-10 border-2 border-blue-500 border-solid">
-    <p className="text-lg text-gray-100">
+  <div className="flex flex-col justify-center align-middle m-5 sm:my-14 sm:ml-5 lg:ml-20 col-span-12 sm:col-span-7">
+    <p className="text-base sm:text-lg text-justify text-gray-100">
       {aboutItems.desc}
+      <br /> <br />
+      In terms of code, I've worked with the following technologies so far:
+      <br />
+    </p>
+
+    <ul className="tech-stack list-none flex m-5 text-gray-100">
+          <div className='mr-5'>
+              <li className="flex items-center">
+                <TbPointFilled className="mr-2 text-purple-100" /> React.js
+              </li>
+              <li className="flex items-center">
+                <TbPointFilled className="mr-2 text-purple-100" /> JavaScript
+              </li>
+              <li className="flex items-center">
+                <TbPointFilled className="mr-2 text-purple-100" /> Python
+              </li>
+          </div>
+          <div className=''>
+              <li className="flex items-center">
+                <TbPointFilled className="mr-2 text-purple-100" /> C#
+              </li>
+              <li className="flex items-center">
+                <TbPointFilled className="mr-2 text-purple-100" /> PHP
+              </li>
+              <li className="flex items-center">
+                <TbPointFilled className="mr-2 text-purple-100" /> MySQL
+              </li>
+          </div>
+    </ul>
+
+    <p className="text-base sm:text-lg text-justify text-gray-100">
+      {aboutItems.desc2}
     </p>
   </div>
 
   {/* Second Column with Image */}
-  <div className="sm:flex hidden justify-center border-2 border-yellow-900 border-solid my-10 mx-2">
+  <div className="sm:flex hidden justify-center col-span-5 my-14 mx-2">
     <Image 
-      src="/assets/me.jpg" 
-      alt="Your description" 
-      width={300} 
-      height={200}
+      src={aboutItems.img} 
+      alt={aboutItems.alt} 
+      width={aboutItems.width} 
+      height={aboutItems.height}
       className="object-cover rounded-lg shadow-lg drop-shadow-2xl"
     />
   </div>

@@ -1,14 +1,10 @@
 import { About, Experience, Landing, Projects, Header } from "@/components";
 import { FloatingNav, BackgroundLines } from "@/components/ui";
-import Image from "next/image";
-import { FaBriefcase, FaHome } from "react-icons/fa";
-import { FcAbout } from "react-icons/fc";
-import { IoFolderSharp } from "react-icons/io5";
 
 export default function Home() {
   return (
     <div className="relative bg-navy-50 flex justify-center items-center flex-col overflow-hidden p-2">
-      <div className="max-w-7xl w-full">
+      <div className="w-full">
         <FloatingNav navItems={[
           {name: 'home', link: '#home', active: false, id:'home'}, 
           {name: 'about', link: '#about', active: false, id:'about'},
@@ -17,7 +13,7 @@ export default function Home() {
         ]}/>
       </div>
 
-      <section className="w-full relative min-h-screen" id="home">
+      <section className="w-full relative min-h-dvh" id="home">
         <BackgroundLines>
         <Header /> {/* fix cv link (create route) */}
           <Landing />
