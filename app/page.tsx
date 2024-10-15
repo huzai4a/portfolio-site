@@ -10,14 +10,14 @@ export default function Home() {
     <div className="relative bg-navy-50 flex justify-center items-center flex-col overflow-hidden p-2">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={[
-          {name: 'home', link: '#home', icon: <FaHome />}, 
-          {name: 'about', link: '#about', icon: <FcAbout />},
-          {name: 'experience', link: '#experience', icon: <FaBriefcase />},
-          {name: 'projects', link: '#projects', icon: <IoFolderSharp />}
+          {name: 'home', link: '#home', active: false, id:'home'}, 
+          {name: 'about', link: '#about', active: false, id:'about'},
+          {name: 'experience', link: '#experience', active: false, id:'experience'},
+          {name: 'projects', link: '#projects', active: false, id:'projects'}
         ]}/>
       </div>
 
-      <section className="w-full relative" id="about">
+      <section className="w-full relative min-h-screen" id="home">
         <BackgroundLines>
         <Header /> {/* fix cv link (create route) */}
           <Landing />
