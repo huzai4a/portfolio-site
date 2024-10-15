@@ -10,7 +10,7 @@ const About = () => {
   <div className="col-span-12">
     <h1 className="font-bold pl-5 lg:pl-20 text-5xl">
       {aboutItems.header}
-    </h1>
+    </h1> 
   </div>
 
   {/* First Column with Text */}

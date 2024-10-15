@@ -7,3 +7,19 @@ export const aboutItems = {
     width: 280,
     height: 180
 };
+
+export const experiences = [
+    {
+        title: "example",
+        company: "feiojef",
+        date: "November 2005 - January 2006",
+        location: "Ottawa, ON, Canada (Remote)",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor culpa, omnis voluptas quibusdam autem corrupti assumenda eum, rerum voluptatem voluptatibus dolores illo nesciunt itaque odit excepturi error cupiditate! Alias, incidunt.",
+        img:"efpok.jpg",
+        alt:"img"
+    }
+]
+
+export const projects = {
+
+}

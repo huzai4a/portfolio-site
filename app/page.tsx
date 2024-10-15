@@ -3,7 +3,7 @@ import { FloatingNav, BackgroundLines } from "@/components/ui";
 
 export default function Home() {
   return (
-    <div className="relative bg-navy-50 flex justify-center items-center flex-col overflow-hidden p-2">
+    <div className="relative bg-navy-50 flex justify-center flex-col overflow-hidden p-2">
       <div className="w-full">
         <FloatingNav navItems={[
           {name: 'home', link: '#home', active: false, id:'home'}, 
