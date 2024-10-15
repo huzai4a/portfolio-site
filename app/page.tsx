@@ -19,7 +19,7 @@ export default function Home() {
           <Landing />
         </BackgroundLines>
       </section>
-        
+      
         <About />
         <Experience />
         <Projects />

@@ -24,7 +24,6 @@ const config: Config = {
           50: '#b7c2cf',
           100: '#8890af'
         },
-        'beige': '#d2cca1', // maybe change?
         purple: {
           //50 light, 100 darker
           50: '#c2aff0',
