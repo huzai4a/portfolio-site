@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import FaviconHandler from "@/components/FaviconHandler";
 
 const inter = Inter({ subsets: ["latin"]});
 
@@ -23,14 +22,14 @@ export const metadata: Metadata = {
   icons: [
     // standard
     { rel: "icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"16x16"},
-    // // apple
-    // { rel: "apple-touch-icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"180x180"},
-    // { rel: "apple-touch-icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"167x167"},
-    // { rel: "apple-touch-icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"152x152"},
-    // { rel: "apple-touch-icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"120x120"},
-    // // android/chrome
-    // { rel: "icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"192x192"},
-    // { rel: "icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"144x144"},
+    // apple
+    { rel: "apple-touch-icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"180x180"},
+    { rel: "apple-touch-icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"167x167"},
+    { rel: "apple-touch-icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"152x152"},
+    { rel: "apple-touch-icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"120x120"},
+    // android/chrome
+    { rel: "icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"192x192"},
+    { rel: "icon", url: "/assets/dark-logo.ico", type:"image/x-icon", sizes:"144x144"},
   ]
 };
 
@@ -44,7 +43,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <FaviconHandler />
+
         {children}
       </body>
     </html>
