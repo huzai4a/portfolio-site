@@ -3,7 +3,7 @@ import React from 'react'
 const Landing = () => {
   return (
     <div className="flex items-center justify-center flex-col min-h-screen">
-          <h1 className="text-5xl sm:text-7xl  font-bold text-gray-100 dark:text-gray-50">
+          <h1 className="text-5xl sm:text-7xl  font-bold text-gray-100 dark:text-gray-50 font-sans">
             hi, i'm <span className='dark:text-purple-100'>huzaifa</span>.
           </h1>
           <h3 className='text-xl sm:text-2xl font-bold text-gray-100 dark:text-gray-100 py-1'>

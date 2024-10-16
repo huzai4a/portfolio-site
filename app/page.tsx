@@ -1,9 +1,10 @@
-import { About, Experience, Landing, Projects, Header } from "@/components";
+import { Header, Landing, About, Experience, Projects } from "@/components";
+import Footer from "@/components/Footer";
 import { FloatingNav, BackgroundLines } from "@/components/ui";
 
 export default function Home() {
   return (
-    <div className="relative bg-navy-50 flex justify-center flex-col overflow-hidden p-2">
+    <div className="relative bg-navy-50 flex justify-center flex-col overflow-hidden p-2 font-geistSans">
       <div className="w-full">
         <FloatingNav navItems={[
           {name: 'home', link: '#home', active: false, id:'home'}, 
@@ -23,7 +24,7 @@ export default function Home() {
         <About />
         <Experience />
         <Projects />
-        
+        <Footer />
     </div>
   );
 }
