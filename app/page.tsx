@@ -1,5 +1,4 @@
-import { Header, Landing, About, Experience, Projects } from "@/components";
-import Footer from "@/components/Footer";
+import { Header, Landing, About, Experience, Projects, Footer } from "@/components";
 import { FloatingNav, BackgroundLines } from "@/components/ui";
 
 export default function Home() {
