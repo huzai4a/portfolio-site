@@ -1,11 +1,15 @@
 import { Header, Landing, About, Experience, Projects, Footer } from "@/components";
-import { FloatingNav, BackgroundLines } from "@/components/ui";
+import { FloatingNav, BackgroundLines, Timeline } from "@/components/ui";
+import { data } from "@/components/ui/Timeline";
+import React from "react";
+
+
 
 export default function Home() {
   return (
-    <div className="relative bg-navy-50 flex justify-center flex-col overflow-hidden p-2 font-geistSans">
+    <div className="relative bg-navy-50 p-2 font-geistSans">
       <div className="w-full">
-        <FloatingNav navItems={[
+        <FloatingNav className="z-[1000]" navItems={[
           {name: 'home', link: '#home', active: false, id:'home'}, 
           {name: 'about', link: '#about', active: false, id:'about'},
           {name: 'experience', link: '#experience', active: false, id:'experience'},
@@ -21,7 +25,13 @@ export default function Home() {
       </section>
       
         <About />
-        <Experience />
+
+
+      <Experience />
+      <Timeline data={data} />
+
+
+
         <Projects />
         <Footer />
     </div>

@@ -16,7 +16,7 @@ const About = () => {
   {/* First Column with Text */}
   <div className="flex flex-col justify-center align-middle m-5 sm:my-14 sm:ml-5 lg:ml-20 col-span-12 sm:col-span-7">
     <p className="text-base sm:text-lg text-justify text-gray-100">
-      {aboutItems.desc}
+    Currently, I'm going through my second year of computer engineering at <a target="_blank" href='https://www.eng.mcmaster.ca/ece/degree-options/computer-engineering/' className='text-purple-100 font-medium underline decoration-navy-50 hover:decoration-purple-100 hover:decoration-solid'>McMaster University</a>. A couple courses that I find really helpful in projects include data structures & algorithms, principle programming and more.
       <br /> <br />
       In terms of code, I've worked with the following technologies so far:
       <br />
