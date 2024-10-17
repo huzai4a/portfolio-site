@@ -64,7 +64,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             id="experience"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
+              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full dark:bg-purple-100 p-2" />
               </div>
               <h3 className="hidden md:block text-xl md:pl-20 md:text-4xl font-bold dark:text-gray-50">
@@ -184,8 +184,9 @@ export const data = [
               <li>
               - Achieved various certifications including CPR training
               </li>
-            
             </ul>
+            <br />
+            I had the opportunity to work as part of a team to facilitate a Youth Forum, where we collaborated to ensure the event ran smoothly and effectively engaged young participants. Throughout the program, I participated in several leadership ventures that emphasized communication, helping me strengthen my interpersonal and organizational skills. Additionally, I earned various certifications, including CPR training, which further enhanced my ability to contribute to both individual and team-focused initiatives.
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -221,7 +222,7 @@ export const data = [
       ),
     },
     {
-      title: "Digitera",
+      title: "Digitera Interactive",
       date: "Jan. 2022 - Jun. 2022",
       content: (
         <div className="font-geistSans">
@@ -241,6 +242,10 @@ export const data = [
                 - Became familiarized with Github and the common workflow of large projects in both the frontend and backend
               </li>
             </ul>
+            <br />
+            During my time at Digitera, I developed backend database connections using AJAX, ensuring secure data transmission with PHP PDO protection. This experience helped me deepen my understanding of backend processes and security measures. One of the key tasks I handled was updating a deprecated login system, which I streamlined for easier access by future developers, improving the overall user authentication flow.
+            <br /><br />
+            Additionally, I worked on integrating code blocks seamlessly into existing websites, enhancing their functionality without disrupting the current structure. This role also gave me the chance to familiarize myself with GitHub and the typical workflow of large-scale projects, providing me hands-on experience in both frontend and backend development. This exposure to collaboration tools and coding practices has significantly sharpened my technical and team coordination skills.
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
