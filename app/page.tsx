@@ -1,6 +1,6 @@
 import { Header, Landing, About, Experience, Projects, Footer } from "@/components";
 import { FloatingNav, BackgroundLines, Timeline } from "@/components/ui";
-import { data } from "@/components/ui/Timeline";
+import { data } from "@/components/ui/timeline";
 import React from "react";
 
 

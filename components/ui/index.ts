@@ -1,3 +1,3 @@
-export { FloatingNav } from "./FloatingNav";
+export { FloatingNav } from "./floating-nav";
 export { BackgroundLines } from "./background-lines";
-export { Timeline } from "./Timeline";
+export { Timeline } from "./timeline";
