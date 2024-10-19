@@ -6,6 +6,7 @@ import React, {
   createContext,
   useContext,
 } from "react";
+import { createPortal } from "react-dom";
 import {
   IconArrowNarrowLeft,
   IconArrowNarrowRight,
@@ -15,6 +16,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { FaGithub } from "react-icons/fa";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -25,8 +27,15 @@ type Card = {
   src: string;
   title: string;
   category: string;
+  git?: string;
   content: React.ReactNode;
 };
+
+interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}
 
 export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
@@ -153,6 +162,33 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   );
 };
 
+// Define Modal using React Portal
+const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  // Close modal on outside click
+  useOutsideClick(modalRef, onClose);
+
+  if (!isOpen) return null;
+
+
+
+  return createPortal(
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800">
+      <div
+      ref={modalRef} //attach ref to modal for outside click 
+      className="relative bg-white dark:bg-navy-50 h-fit max-w-5xl w-full my-10 p-4 md:p-10 rounded-3xl font-sans shadow-lg overflow-y-auto max-h-[80dvh]">
+        <button onClick={onClose} className="absolute top-4 right-4">
+          <IconX className="h-10 w-10 font-bold text-neutral-100 dark:text-purple-100" />
+        </button>
+        {children}
+      </div>
+    </div>,
+    document.body // This renders the modal inside the body element
+  );
+};
+
+// Card Component
 export const Card = ({
   card,
   index,
@@ -163,8 +199,7 @@ export const Card = ({
   layout?: boolean;
 }) => {
   const [open, setOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const { onCardClose } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -183,8 +218,6 @@ export const Card = ({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  useOutsideClick(containerRef, () => handleClose());
-
   const handleOpen = () => {
     setOpen(true);
   };
@@ -196,56 +229,16 @@ export const Card = ({
 
   return (
     <>
-      <AnimatePresence>
-        {open && (
-          <div className="fixed inset-0 h-screen z-50 overflow-auto">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="bg-black/80 backdrop-blur-lg h-full w-full fixed inset-0"
-            />
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              ref={containerRef}
-              layoutId={layout ? `card-${card.title}` : undefined}
-              className="max-w-5xl mx-auto bg-white dark:bg-neutral-900 h-fit  z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
-            >
-              <button
-                className="sticky top-4 h-8 w-8 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center"
-                onClick={handleClose}
-              >
-                <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
-              </button>
-              <motion.p
-                layoutId={layout ? `category-${card.title}` : undefined}
-                className="text-base font-medium text-black dark:text-white"
-              >
-                {card.category}
-              </motion.p>
-              <motion.p
-                layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white"
-              >
-                {card.title}
-              </motion.p>
-              <div className="py-10">{card.content}</div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
+        title="learn more"
         onClick={handleOpen}
-        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 hover:brightness-200 transition duration-300"
+        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-[28rem] w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 hover:brightness-150 transition duration-300"
       >
-        <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-white text-sm md:text-base font-medium font-sans text-left"
+            className="dark:text-purple-100 text-sm md:text-base font-medium font-sans text-left"
           >
             {card.category}
           </motion.p>
@@ -256,6 +249,16 @@ export const Card = ({
             {card.title}
           </motion.p>
         </div>
+        <div className="absolute bottom-5 right-5">
+        <a
+            className={cn("relative z-[1000] flex items-center justify-center h-16 w-16 rounded-full hover:bg-navy-50 transition duration-300", !(card.git) ? "hidden" : "")}
+            target="_blank"
+            href={card.git}
+            onClick={(e) => e.stopPropagation()} // Prevent the click event from opening the modal
+          >
+            <FaGithub className="h-10 w-10 text-purple-100" />
+          </a>
+        </div>
         <BlurImage
           src={card.src}
           alt={card.title}
@@ -263,6 +266,30 @@ export const Card = ({
           className="object-cover absolute z-10 inset-0"
         />
       </motion.button>
+
+      {/* Modal rendered using a Portal */}
+      <Modal isOpen={open} onClose={handleClose}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          layoutId={layout ? `card-${card.title}` : undefined}
+        >
+          <motion.p
+            layoutId={layout ? `category-${card.title}` : undefined}
+            className="text-base font-medium dark:text-purple-100"
+          >
+            {card.category}
+          </motion.p>
+          <motion.p
+            layoutId={layout ? `title-${card.title}` : undefined}
+            className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white-50"
+          >
+            {card.title}
+          </motion.p>
+          <div className="py-10">{card.content}</div>
+        </motion.div>
+      </Modal>
     </>
   );
 };
@@ -295,3 +322,5 @@ export const BlurImage = ({
     />
   );
 };
+
+// change styles and maybe add hover effect for outside modal
