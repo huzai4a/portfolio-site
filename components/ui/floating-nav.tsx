@@ -128,7 +128,7 @@ export const FloatingNav = ({
             className={cn(
               navItem.active ?
               "border text-sm font-medium relative border-neutral-200 dark:border-neutral-300/[0.2] text-black dark:text-white-50 px-4 py-2 rounded-full" :
-              "relative dark:text-white-50 items-center flex space-x-1 text-neutral-600 hover:text-purple-50"
+              "relative dark:text-white-50 items-center flex space-x-1 text-neutral-600 hover:text-purple-50 transition duration-100"
             )} // Apply active styling here
           >
             <span className="hidden sm:block text-sm">{navItem.name}</span>
