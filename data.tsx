@@ -9,20 +9,28 @@ export const aboutItems = {
     height: 180
 };
 
-const ModalContent = () => {
+interface ModalContentProps {
+  desc: string;
+  img: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}
+
+const ModalContent = ({desc, img, alt, width=200, height=200}:ModalContentProps) => {
     return (
       <>
         <div
           className="bg-[#F5F5F7] dark:bg-navy-50 md:p-14 mb-4"
         >
           <p className="dark:text-gray-100 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae necessitatibus consectetur adipisci, porro aliquam recusandae repellendus aperiam voluptatum sit omnis asperiores distinctio cupiditate aliquid commodi dolor, sed voluptates a doloremque.
+            {desc}
           </p>
           <Image
-            src="/assets/me.jpg"
-            alt="Macbook mockup from Aceternity UI"
-            height="500"
-            width="500"
+            src={img}
+            alt={alt}
+            height={height}
+            width={width}
             className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain pt-10"
           />
         </div>
@@ -37,19 +45,31 @@ export const projects = [
         title: 'Instagram Unfollow Tracker',
         src: "/assets/instagram-unfollow-tracker.png",
         git: "https://github.com/huzai4a/js-projects/tree/main/listChecker",
-        content: <ModalContent />
+        content: <ModalContent 
+        desc="The project allows users to upload their Instagram data in order to identify individuals they follow who are not following them back. By processing user data from Instagram's JSON files, the tool efficiently scrapes and analyzes this information without storing any personal data or compromising user privacy. The identification of unfollowers is done securely, ensuring that no sensitive information is retained during the process. To enhance user experience, I designed a fully responsive interface using HTML and CSS, which adjusts seamlessly across different devices and screen sizes, ensuring smooth navigation and easy interaction. This tool provides a simple yet effective solution for Instagram users looking to manage their follower lists more effectively."
+        img="/assets/"
+        alt=""
+        />
     },
     {
         category: 'Unity, C#',
         title: 'Alien Escape',
         src: "/assets/alien-escape-sample.png",
         git: "https://github.com/huzai4a/Alien-Escape",
-        content: <ModalContent />
+        content: <ModalContent 
+        desc=""
+        img="/assets/"
+        alt=""
+        />
     },
     {
         category: 'Python',
         title: 'Autonomous Item Sorting & Disposal',
         src: "/assets/sorting-bot.png",
-        content: <ModalContent />
+        content: <ModalContent 
+        desc=""
+        img="/assets/"
+        alt=""
+        />
     }
 ]

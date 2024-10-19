@@ -177,7 +177,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800">
       <div
       ref={modalRef} //attach ref to modal for outside click 
-      className="relative bg-white dark:bg-navy-50 h-fit max-w-5xl w-full my-10 p-4 md:p-10 rounded-3xl font-sans shadow-lg overflow-y-auto max-h-[80dvh]">
+      className="relative bg-white dark:bg-navy-50 h-fit max-w-5xl md:max-w-[60dvw] w-full my-10 p-4 md:p-10 rounded-3xl font-sans shadow-lg overflow-y-auto max-h-[80dvh] z-[1000] ">
         <button onClick={onClose} className="absolute top-4 right-4">
           <IconX className="h-10 w-10 font-bold text-neutral-100 dark:text-purple-100 hover:brightness-75" />
         </button>
@@ -251,7 +251,7 @@ export const Card = ({
         </div>
         <div className="absolute bottom-5 right-5">
         <a
-            className={cn("relative z-[1000] flex items-center justify-center h-16 w-16 rounded-full hover:bg-navy-50 transition duration-300", !(card.git) ? "hidden" : "")}
+            className={cn("relative z-[1000] flex items-center justify-center h-16 w-16 rounded-full hover:bg-navy-50 hover:brightness-50 transition duration-300", !(card.git) ? "hidden" : "")}
             target="_blank"
             href={card.git}
             onClick={(e) => e.stopPropagation()} // Prevent the click event from opening the modal
@@ -323,4 +323,4 @@ export const BlurImage = ({
   );
 };
 
-// change styles and maybe add hover effect for outside modal
+// modal content add, make it functionable, add images to timeline
