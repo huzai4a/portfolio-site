@@ -1,7 +1,6 @@
 "use client";
 
-import { Header, Landing, About, Experience, Projects, Footer } from "@/components";
-import { FloatingNav, BackgroundLines, Timeline } from "@/components/ui";
+import { Header, Landing, About, Experience, Projects, Footer, FloatingNav, BackgroundLines, Timeline } from "@/components";
 import { data } from "@/data";
 import React from "react";
 
@@ -27,7 +26,7 @@ export default function Home() {
       </section>
       
       <About />
-      
+
       <Experience />
       <Timeline data={data} />
 

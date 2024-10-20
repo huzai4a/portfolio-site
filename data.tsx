@@ -39,7 +39,7 @@ export const data = [
               alt="coding club logo"
               width={300} // Explicit width
               height={300} // Explicit height
-              
+              className="img"
             />
           </div>
 
@@ -49,7 +49,7 @@ export const data = [
               alt="lesson demo example"
               width={300} // Explicit width
               height={300} // Explicit height
-              
+              className="img"
             />
           </div>
         </div>
@@ -88,7 +88,7 @@ export const data = [
                 alt="youth in policing poster"
                 width={300} // Explicit width
                 height={300} // Explicit height
-                
+                className="img"
               />
             </div>
 
@@ -98,7 +98,7 @@ export const data = [
                 alt="lesson demo example"
                 width={300} // Explicit width
                 height={300} // Explicit height
-                
+                className="img"
               />
             </div>
           </div>
@@ -138,7 +138,7 @@ export const data = [
                 alt="digitera home page"
                 width={300} // Explicit width
                 height={300} // Explicit height
-                
+                className="img"
               />
             </div>
 
@@ -148,7 +148,7 @@ export const data = [
                 alt="languages used"
                 width={300} // Explicit width
                 height={300} // Explicit height
-                
+                className="img"
               />
             </div>
           </div>

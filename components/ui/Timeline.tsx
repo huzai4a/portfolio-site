@@ -1,12 +1,12 @@
 "use client";
+
+
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 
 interface TimelineEntry {
   title: string;
@@ -27,24 +27,32 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
       // Calculate total height of the timeline entries
       let totalHeight = 0;
+
       entries.forEach((entry) => {
         totalHeight += entry.getBoundingClientRect().height;
       });      
       
-      // set line height by total height
-      setHeight(totalHeight);
+      // Set line height by total height
+      if (totalHeight > 0) {
+        setHeight(totalHeight);
+      }
     }
   };
 
   useEffect(() => {
-    calculateHeight();
+    const handleLoad = () => {
+      calculateHeight(); // Recalculate height after images have loaded
+    };
 
+    const images = ref.current?.querySelectorAll('img');
+  images?.forEach(img => img.addEventListener('load', handleLoad));
     // Add event listener to recalculate height on window resize
     window.addEventListener("resize", calculateHeight);
 
     // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", calculateHeight);
+      images?.forEach(img => img.removeEventListener('load', handleLoad));
     };
   }, [data]);
 
@@ -54,7 +62,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+  const opacityTransform = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
 
   return (
     <div className="w-full font-sans md:px-10" ref={containerRef}>
@@ -65,7 +73,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             className="timeline-entry flex justify-start pt-10 md:pt-40 md:gap-10"
             // id="experience"
           >
-            <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
+            <div className="sticky flex flex-col md:flex-row z-40 items-center top-8 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full dark:bg-purple-100 p-2" />
               </div>
