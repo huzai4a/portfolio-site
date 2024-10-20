@@ -1,3 +1,5 @@
+"use client";
+
 import { Header, Landing, About, Experience, Projects, Footer } from "@/components";
 import { FloatingNav, BackgroundLines, Timeline } from "@/components/ui";
 import { data } from "@/data";
@@ -24,16 +26,13 @@ export default function Home() {
         </BackgroundLines>
       </section>
       
-        <About />
-
-
+      <About />
+      
       <Experience />
       <Timeline data={data} />
 
-
-
-        <Projects />
-        <Footer />
+      <Projects />
+      <Footer />
     </div>
   );
 }
