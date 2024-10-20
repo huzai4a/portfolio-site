@@ -16,45 +16,45 @@ export const data = [
     location: "Whitby, ON, Canada",
     content: (
       <div className="font-geistSans">
-        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base  mb-8">
+        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base pb-8 mb-8">
           <h3>Summary:</h3>
           <ul className="list-none text-gray-100 font-geistSans ml-5">
             <li>
-              - Troubleshooting experience: aiding in bug fixes. formatting
-              issues, etc.
+              - Troubleshooting experience: aiding in bug fixes, formatting issues, etc.
             </li>
             <li>- Lead a team to facilitate club meetings and events</li>
             <li>
-              - Created HTML/CSS/JS foundational lessons to teach responsive
-              website fundamentals
+              - Created HTML/CSS/JS foundational lessons to teach responsive website fundamentals
             </li>
           </ul>
           <br />
-          I have gained valuable experience in troubleshooting, aiding in bug
-          fixes and resolving formatting issues across various projects. As a
-          team leader, I have successfully facilitated club meetings and events,
-          ensuring effective collaboration and smooth execution. Additionally,
-          I developed and delivered foundational lessons in HTML, CSS, and
-          JavaScript to teach responsive website design, helping others build
-          essential skills in web development.
+          I have gained valuable experience in troubleshooting, aiding in bug fixes, and resolving formatting issues across various projects. As a team leader, I have successfully facilitated club meetings and events, ensuring effective collaboration and smooth execution. Additionally, I developed and delivered foundational lessons in HTML, CSS, and JavaScript to teach responsive website design, helping others build essential skills in web development.
         </div>
-        <div className="grid grid-cols-2 gap-4 text-gray-50 font-bold">
-          <Image
-            src="/assets/cc-logo.png"
-            alt="coding club logo"
-            width={500}
-            height={800}
-            className="h-full rounded-xl object-cover shadow-lg drop-shadow-2xl"
-          />
-          <Image
-            src="/assets/lesson-ex.png"
-            alt="lesson demo example"
-            width={500}
-            height={800}
-            className="h-full rounded-xl object-cover shadow-lg drop-shadow-2xl"
-          />
+
+        {/* Flex container for images */}
+        <div className="flex gap-4 items-center justify-center w-full">
+          <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+            <Image
+              src="/assets/cc-logo.png"
+              alt="coding club logo"
+              width={300} // Explicit width
+              height={300} // Explicit height
+              
+            />
+          </div>
+
+          <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+            <Image
+              src="/assets/lesson-ex.png"
+              alt="lesson demo example"
+              width={300} // Explicit width
+              height={300} // Explicit height
+              
+            />
+          </div>
         </div>
       </div>
+
     ),
   },
     {
@@ -79,21 +79,28 @@ export const data = [
             <br />
             I had the opportunity to work as part of a team to facilitate a Youth Forum, where we collaborated to ensure the event ran smoothly and effectively engaged young participants. Throughout the program, I participated in several leadership ventures that emphasized communication, helping me strengthen my interpersonal and organizational skills. Additionally, I earned various certifications, including CPR training, which further enhanced my ability to contribute to both individual and team-focused initiatives.
           </div>
-          <div className="grid grid-cols-2 gap-4 text-gray-50 font-bold">
-            <Image
-              src="/assets/durham-sign.png"
-              alt="youth in policing poster"
-              width={500}
-              height={800}
-              className="max-h-[80dvh] rounded-xl object-cover shadow-lg drop-shadow-2xl"
-            />
-            <Image
-              src="/assets/yip-poster.png"
-              alt="lesson demo example"
-              width={500}
-              height={800}
-              className="max-h-[80dvh] rounded-xl object-cover shadow-lg drop-shadow-2xl"
-            />
+          
+          {/* Flex container for images */}
+          <div className="flex gap-4 items-center justify-center w-full">
+            <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+              <Image
+                src="/assets/durham-sign.png"
+                alt="youth in policing poster"
+                width={300} // Explicit width
+                height={300} // Explicit height
+                
+              />
+            </div>
+
+            <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+              <Image
+                src="/assets/yip-poster.png"
+                alt="lesson demo example"
+                width={300} // Explicit width
+                height={300} // Explicit height
+                
+              />
+            </div>
           </div>
         </div>
       ),
@@ -122,21 +129,28 @@ export const data = [
             <br /><br />
             Additionally, I worked on integrating code blocks seamlessly into existing websites, enhancing their functionality without disrupting the current structure. This role also gave me the chance to familiarize myself with GitHub and the typical workflow of large-scale projects, providing me hands-on experience in both frontend and backend development. This exposure to collaboration tools and coding practices has significantly sharpened my technical and team coordination skills.
           </div>
-          <div className="grid grid-cols-2 gap-4 text-gray-50 font-bold">
-            <Image
-              src="/assets/digitera-landing.png"
-              alt="digitera home page"
-              width={500}
-              height={800}
-              className="h-full rounded-xl object-cover shadow-lg drop-shadow-2xl"
-            />
-            <Image
-              src="/assets/digitera-techs-stacked.png"
-              alt="languages used"
-              width={500}
-              height={800}
-              className="h-full rounded-xl object-cover shadow-lg drop-shadow-2xl"
-            />
+
+          {/* Flex container for images */}
+          <div className="flex gap-4 items-center justify-center w-full">
+            <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+              <Image
+                src="/assets/digitera-landing.png"
+                alt="digitera home page"
+                width={300} // Explicit width
+                height={300} // Explicit height
+                
+              />
+            </div>
+
+            <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+              <Image
+                src="/assets/digitera-techs-stacked.png"
+                alt="languages used"
+                width={300} // Explicit width
+                height={300} // Explicit height
+                
+              />
+            </div>
           </div>
         </div>
       ),

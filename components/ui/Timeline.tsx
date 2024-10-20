@@ -29,7 +29,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       let totalHeight = 0;
       entries.forEach((entry) => {
         totalHeight += entry.getBoundingClientRect().height;
-      });
+      });      
+      
       // set line height by total height
       setHeight(totalHeight);
     }
@@ -77,7 +78,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </h3>
             </div>
 
-            <div className="relative pl-20 pr-4 md:pl-4 w-full">
+            <div className="pl-20 pr-4 md:pl-4 w-full">
               {/* small screen title */}
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold dark:text-gray-50">
                 {item.title} <br />
