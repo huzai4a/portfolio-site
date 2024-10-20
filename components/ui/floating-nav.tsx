@@ -9,6 +9,13 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+interface NavItem {
+  name: string;
+  link: string;
+  id: string;
+  active?: boolean;
+}
+
 export const FloatingNav = ({
   navItems,
   className,
@@ -21,7 +28,7 @@ export const FloatingNav = ({
   }[];
   className?: string;
 }) => {
-  const { scrollYProgress, scrollY } = useScroll();
+  const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(false);
 
@@ -31,7 +38,8 @@ export const FloatingNav = ({
 
 
   // Refs for sections to observe
-  const sectionRefs = useRef<any>({});
+  const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
+
 
   // Function to handle when a section becomes visible
   const handleIntersect = (entries: IntersectionObserverEntry[]) => {
@@ -90,7 +98,7 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() <= 0.02) {
         setVisible(true);
@@ -123,7 +131,7 @@ export const FloatingNav = ({
           className
         )}
       >
-         {activeNav.map((navItem: any, idx: number) => (
+         {activeNav.map((navItem: NavItem, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
