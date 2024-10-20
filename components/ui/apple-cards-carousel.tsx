@@ -177,7 +177,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-gray-800">
       <div
       ref={modalRef} //attach ref to modal for outside click 
-      className="relative bg-white dark:bg-navy-50 h-fit max-w-5xl md:max-w-[60dvw] w-full my-10 p-4 md:p-10 rounded-3xl font-sans shadow-lg overflow-y-auto max-h-[80dvh]">
+      className="relative bg-white dark:bg-navy-50 h-fit max-w-[95dvw] md:max-w-[75dvw] lg:max-w-[60dvw] w-full my-10 p-4 md:p-10 rounded-3xl font-sans shadow-lg overflow-y-auto max-h-[80dvh]">
         <button onClick={onClose} className="absolute top-4 right-4">
           <IconX className="h-10 w-10 font-bold text-neutral-100 dark:text-purple-100 hover:brightness-75" />
         </button>
@@ -287,7 +287,7 @@ export const Card = ({
           >
             {card.title}
           </motion.p>
-          <div className="py-10">{card.content}</div>
+          <div className="pt-10">{card.content}</div>
         </motion.div>
       </Modal>
     </>

@@ -18,7 +18,7 @@ const About = () => {
     <p className="text-base sm:text-lg text-justify text-gray-100">
     Currently, I'm going through my second year of computer engineering at <a target="_blank" href='https://www.eng.mcmaster.ca/ece/degree-options/computer-engineering/' className='text-purple-100 font-medium underline decoration-navy-50 hover:decoration-purple-100 hover:decoration-solid'>McMaster University</a>. A couple courses that I find really helpful in projects include data structures & algorithms, principle programming and more.
       <br /> <br />
-      In terms of code, I've worked with the following technologies so far:
+      In terms of code, some of the technologies I've used so far include:
       <br />
     </p>
 
