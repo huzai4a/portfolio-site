@@ -28,11 +28,11 @@ export const data = [
             </li>
           </ul>
           <br />
-          I have gained valuable experience in troubleshooting, aiding in bug fixes, and resolving formatting issues across various projects. As a team leader, I have successfully facilitated club meetings and events, ensuring effective collaboration and smooth execution. Additionally, I developed and delivered foundational lessons in HTML, CSS, and JavaScript to teach responsive website design, helping others build essential skills in web development.
+          Being the president of the coding club allowed me to be involved with software in a way I never had before. Being the one that students looked to for help applied pressure for me to have a better understanding of foundational HTML/CSS/JS. This understanding included syntax but also extended to logical issues, semantic errors, layout problems, and more. This gave me the opportunity to come up with troubleshooting strategies and also forced me to adapt and recognize bug causes regularly. As a team leader, I have successfully facilitated club meetings and events, ensuring effective collaboration and smooth execution. Additionally, I developed and delivered foundational lessons in HTML, CSS, and JavaScript to teach responsive website design, helping others build essential skills in web development.
         </div>
 
         {/* Flex container for images */}
-        <div className="flex gap-4 items-center justify-center w-full">
+        <div className="flex gap-4 items-center justify-center w-full pt-5">
           <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
             <Image
               src="/assets/cc-logo.png"
@@ -70,18 +70,18 @@ export const data = [
               - Worked as part of a team to facilitate a <a target="_blank" href='https://www.instagram.com/drps_official/p/Cf7PsdVL8Cj/' className='text-purple-100 font-medium underline decoration-navy-50 hover:decoration-purple-100 hover:decoration-solid'>Youth Forum</a>
               </li>
               <li>
-                - Participated in various leadership ventures with some focus on communication
+                - Participated in various leadership ventures
               </li>
               <li>
-              - Achieved various certifications including CPR training
+              - Frequently planned/collaborated with a small team, furthering my communication skills
               </li>
             </ul>
             <br />
-            I had the opportunity to work as part of a team to facilitate a Youth Forum, where we collaborated to ensure the event ran smoothly and effectively engaged young participants. Throughout the program, I participated in several leadership ventures that emphasized communication, helping me strengthen my interpersonal and organizational skills. Additionally, I earned various certifications, including CPR training, which further enhanced my ability to contribute to both individual and team-focused initiatives.
+            This initiative drastically changed my outlook on communication, collaboration and leadership, all of which contribute to my skill as a developer. We worked in a tight-knit team, and this experience brought together people that were able to step up when their expertise were needed, which is something that is essential in software development. Throughout the program, I had many opportunities to lead the team and speak in public, which furthered my communication and leadership.
           </div>
           
           {/* Flex container for images */}
-          <div className="flex gap-4 items-center justify-center w-full">
+          <div className="flex gap-4 items-center justify-center w-full pt-5">
             <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
               <Image
                 src="/assets/durham-sign.png"
@@ -115,23 +115,23 @@ export const data = [
             <h3>Summary:</h3>
             <ul className="list-none text-gray-100 font-geistSans ml-5">
               <li>
-                -  Developed backend database connections through AJAX with PHP PDO protection
+                -  Worked on preventing SQL injection in backend connections with PHP PDO protection
               </li>
               <li>
-                - Updated a deprecated login system for ease of access for future developers
+                - Refurbished a deprecated login system to use in newer web apps
               </li>
               <li>
-                - Worked on seamlessly integrating code blocks into existing sites
+                - Worked on integrating various features into existing event site
               </li>
             </ul>
             <br />
-            During my time at Digitera, I developed backend database connections using AJAX, ensuring secure data transmission with PHP PDO protection. This experience helped me deepen my understanding of backend processes and security measures. One of the key tasks I handled was updating a deprecated login system, which I streamlined for easier access by future developers, improving the overall user authentication flow.
+            During my time at Digitera, I had the opportunity to work on an event management system with a team of 3 interns and a senior developer. This experience allowed for great mentoring and learning of common SEO practices, which was Digitera's specialty. Also, we were given a login system with a faulty JSON token method, which we used to create an improved version. I later developed backend database connections, ensuring secure data transmission with PHP PDO protection. This experience helped me deepen my understanding of backend processes and security measures.
             <br /><br />
-            Additionally, I worked on integrating code blocks seamlessly into existing websites, enhancing their functionality without disrupting the current structure. This role also gave me the chance to familiarize myself with GitHub and the typical workflow of large-scale projects, providing me hands-on experience in both frontend and backend development. This exposure to collaboration tools and coding practices has significantly sharpened my technical and team coordination skills.
+            Additionally, I worked on integrating various features into existing websites, enhancing their functionality without disrupting the current structure. These features included changing the parameters necessary when adding events, managing the way event deletion was performer, and more. This role also gave me the chance to familiarize myself with GitHub and the typical workflow of large-scale projects, providing me hands-on experience in both frontend and backend development.
           </div>
 
           {/* Flex container for images */}
-          <div className="flex gap-4 items-center justify-center w-full">
+          <div className="flex gap-4 items-center justify-center w-full pt-5">
             <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
               <Image
                 src="/assets/digitera-landing.png"

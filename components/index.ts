@@ -1,6 +1,6 @@
-export { default as About } from "./About";
-export { default as Experience } from "./Experience";
-export { default as Landing } from "./Landing";
-export { default as Projects } from "./Projects";
-export { default as Header } from "./Header";
-export { default as Footer} from "./Footer";
+export { default as About } from "@/components/About";
+export { default as Experience } from "@/components/Experience";
+export { default as Landing } from "@/components/Landing";
+export { default as Projects } from "@/components/Projects";
+export { default as Header } from "@/components/Header";
+export { default as Footer} from "@/components/Footer";
