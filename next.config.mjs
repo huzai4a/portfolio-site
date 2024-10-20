@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-    typescript: {
-        ignoreBuildErrors: true,
-    }
+    // commented out for testing, uncomment if building
+    // output: 'export',
+    // typescript: {
+    //     ignoreBuildErrors: true,
+    // }
 
 };
 

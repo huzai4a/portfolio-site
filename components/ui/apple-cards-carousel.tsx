@@ -178,7 +178,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
       <div
       ref={modalRef} //attach ref to modal for outside click 
       className="relative bg-white dark:bg-navy-50 h-fit max-w-[95dvw] md:max-w-[75dvw] lg:max-w-[60dvw] w-full my-10 p-4 md:p-10 rounded-3xl font-sans shadow-lg overflow-y-auto max-h-[80dvh]">
-        <button onClick={onClose} className="absolute top-4 right-4">
+        <button onClick={onClose} className="absolute top-4 right-4 z-[1000]">
           <IconX className="h-10 w-10 font-bold text-neutral-100 dark:text-purple-100 hover:brightness-75" />
         </button>
         {children}

@@ -9,6 +9,63 @@ export const aboutItems = {
     height: 180
 };
 
+// might make content modular if i get the time
+// interface TimelineImage {
+//   src: string;
+//   alt: string;
+// }
+
+// interface TimelineContentProps {
+//   summary: string[]; // list of strings
+//   content: string;   // description
+//   img1: TimelineImage; // first image
+//   img2: TimelineImage; // second image
+// }
+
+// const TimelineContent = ({summary, content, img1, img2}:TimelineContentProps) => {
+//   return (
+//     <div className="font-geistSans">
+//         <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base pb-8 mb-8">
+//           <h3>Summary:</h3>
+//           <ul className="list-none text-gray-100 font-geistSans ml-5">
+//             {summary.map((item, index) => {
+//               return (
+//                 <li>
+//                   {item}
+//                 </li>
+//               )
+//             })}
+//           </ul>
+//           <br />
+//           {content}
+//         </div>
+
+//         {/* Flex container for images */}
+//         <div className="flex gap-4 items-center justify-center w-full pt-5">
+//           <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+//             <Image
+//               src={img1.src}
+//               alt={img1.alt}
+//               width={300} // Explicit width
+//               height={300} // Explicit height
+//               className="img"
+//             />
+//           </div>
+
+//           <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+//             <Image
+//               src={img2.src}
+//               alt={img2.alt}
+//               width={300} // Explicit width
+//               height={300} // Explicit height
+//               className="img"
+//             />
+//           </div>
+//         </div>
+//       </div>
+//   );
+// };
+
 export const data = [
   {
     title: "Coding Club President",
