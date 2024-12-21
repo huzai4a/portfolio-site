@@ -21,7 +21,7 @@ const Header = () => {
             <a href="https://www.linkedin.com/in/hs2005/" className="px-2 transition duration-100 hover:text-purple-100" target='_blank' title='linkedin'>
                 <FaLinkedin size={'25px'} />
             </a>
-            <a href="/assets/Huzaifa-Syed-Resume-2024.pdf" className="px-2 transition duration-100 hover:text-purple-100" target='_blank' title='resume'>
+            <a href="/assets/huzaifa_syed_resume.pdf" className="px-2 transition duration-100 hover:text-purple-100" target='_blank' title='resume'>
                 <TbFileCv size={'25px'} />
             </a>
         </div>
