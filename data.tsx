@@ -277,7 +277,7 @@ export const projects = [
     category: 'Node.JS, React.JS',
     title: 'Instagram Unfollow Tracker',
     src: "/assets/instagram-unfollow-tracker.png",
-    git: "https://github.com/huzai4a/js-projects/tree/main/listChecker",
+    git: "https://github.com/huzai4a/instaUnfollows",
     content: <ModalContent 
     desc="The project allows users to upload their Instagram data in order to identify individuals they follow who are not following them back. I felt like this was an inconvenience on instagram&apos;s part that could be satisfied through a simple site. By getting users to upload JSON data, the site efficiently analyzes this information without storing any personal data or compromising user privacy. The identification of unfollowers is done securely, ensuring that no sensitive information is retained during the process. To enhance user experience, I designed a fully responsive interface using HTML and CSS, which adjusts seamlessly across different devices and screen sizes, ensuring smooth navigation and easy interaction. This tool provides a simple yet effective solution for Instagram users looking to manage their follower lists more effectively."
     />
