@@ -215,7 +215,7 @@ export const data = [
   ];
 
 interface ModalContentProps {
-  desc: string;
+  desc: React.ReactNode | string;
 }
 
 const ModalContent = ({ desc }:ModalContentProps) => {
@@ -234,30 +234,69 @@ const ModalContent = ({ desc }:ModalContentProps) => {
 
 
 export const projects = [
-    {
-        category: 'Node.JS, React.JS',
-        title: 'Instagram Unfollow Tracker',
-        src: "/assets/instagram-unfollow-tracker.png",
-        git: "https://github.com/huzai4a/js-projects/tree/main/listChecker",
-        content: <ModalContent 
-        desc="The project allows users to upload their Instagram data in order to identify individuals they follow who are not following them back. I felt like this was an inconvenience on instagram&apos;s part that could be satisfied through a simple site. By getting users to upload JSON data, the site efficiently analyzes this information without storing any personal data or compromising user privacy. The identification of unfollowers is done securely, ensuring that no sensitive information is retained during the process. To enhance user experience, I designed a fully responsive interface using HTML and CSS, which adjusts seamlessly across different devices and screen sizes, ensuring smooth navigation and easy interaction. This tool provides a simple yet effective solution for Instagram users looking to manage their follower lists more effectively."
-        />
-    },
-    {
-        category: 'Unity, C#',
-        title: 'Alien Escape',
-        src: "/assets/alien-escape-sample.png",
-        git: "https://github.com/huzai4a/Alien-Escape",
-        content: <ModalContent 
-        desc="An alien has crash landed onto a planet, and they find themselves surrounded by unfamilliar terrain. On impact, the ship dissassembled and scattered pieces across town. Your job is to get the ship pieces and escape, dodging the humans standing in your way. This 2D topdown game was made using unity and C# with some friends. I took on key responsibilities in designing both the leaderboard and enemy AI functionality. The leaderboard tracks player scores and ranks them based on the time it takes to gather the ship pieces. For the enemy AI, I developed intelligent behaviors that actively challenge the player by patrolling the area, guarding ship parts, and adapting based on the player&apos;s actions. Working closely with collaborators, I explored the framing process of the project, ensuring that each team member’s input was integrated smoothly to shape the game's core mechanics and structure. One of the more intricate aspects was handling event-driven conditions, particularly when key inputs triggered specific player actions like dodging enemies or interacting with ship pieces. This ensured the gameplay was fluid, engaging, and responsive to player inputs, while keeping the challenge dynamic and fun."
-        />
-    },
-    {
-        category: 'Python',
-        title: 'Autonomous Item Sorting & Disposal',
-        src: "/assets/sorting-bot.png",
-        content: <ModalContent 
-        desc="I developed a track-following movement system for a simulated Quanser robot, ensuring smooth and precise control of the robot’s motions in various tasks. The movement system was integral to the robot’s ability to navigate its environment effectively, especially in conjunction with the bin detection system I helped implement. Utilizing both color and ultrasonic sensors, this detection system enabled the robot to identify and interact with specific bins, a critical feature for sorting and organizing items within the simulated environment. Additionally, I worked closely with the design team to develop a fully functioning robot dispenser system, which allowed the robot to efficiently deposit sorted items into designated bins. This collaborative effort ensured that the dispenser mechanism was aligned with the overall design goals, making the robot both practical and efficient in its operations. Through this project, we combined sensor integration, mechanical design, and teamwork to create a versatile, high-performing robotic system capable of complex tasks."
-        />
-    }
-]
+  {
+    category: 'ReactJS, Flask, OpenCV, TensorFlow, MediaPipe',
+    title: 'AI-powered Paper Piano',
+    src: "/assets/ink-keys.png",
+    git: "https://github.com/obljubej/ink-keys",
+    content: <ModalContent 
+      desc={
+        <>
+          Check out the demo video below to see it in action!<br /><br />
+          <div className="flex justify-center">
+            <iframe 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/FEbX3Bo4c6Q?si=FV5CVZLqcIeXJLwE" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+              className="my-40 py-32"
+            ></iframe>
+          </div>
+          <br /><br />
+          Ink-Keys turns drawings into instruments using a webcam and hand tracking, offering a portable, affordable way to make music. Accessible for kids, beginners, and creatives alike! 
+          <br /><br />
+          The idea for Ink-Keys came from the desire to make music accessible, affordable, and portable for everyone. The hefty price tag on pianos often makes music education inaccessible, discouraging beginners. Ink-Keys combines a child&apos;s love of drawing with the joy of playing music, fostering creativity and learning through fun. 
+          <br /><br />
+          We wanted to eliminate the barriers by allowing users to draw their own piano and bring it to life anywhere, anytime. The project uses a webcam, phone or any camera available to detect a printed or drawn piano on paper, allowing users to learn, create, and play around with a piano system, with realtime feedback. 
+          <br /><br />
+          We built it using ReactJS and TailwindCSS for the frontend, Flask for the backend with SocketIO for real-time updates, OpenCV for webcam access and key detection, and TensorFlow and MediaPipe for hand tracking. 
+          <br /><br />
+        </>
+      }
+    />
+  },
+  //   content: <ModalContent 
+  //   desc="Ink-Keys turns drawings into instruments using a webcam and hand tracking, offering a portable, affordable way to make music. Accessible for kids, beginners, and creatives alike! The idea for Ink-Keys came from the desire to make music accessible, affordable, and portable for everyone. The hefty price tag on pianos often makes music education inaccessible, discouraging beginners. Ink-Keys combines a child's love of drawing with the joy of playing music, fostering creativity and learning through fun. We wanted to eliminate the barriers by allowing users to draw their own piano and bring it to life anywhere, anytime. The project uses a webcam, phone or any camera available to detect a printed or drawn piano on paper, allowing users to learn, create and play around with a piano system, with realtime feedback. We built it using ReactJS and TailwindCSS for the frontend, Flask for the backend with SocketIO for real-time updates, OpenCV for webcam access and key detection, and TensorFlow and MediaPipe for hand tracking. Check out the demo video below to see it in action!"
+  //   />
+  // },
+  {
+    category: 'Node.JS, React.JS',
+    title: 'Instagram Unfollow Tracker',
+    src: "/assets/instagram-unfollow-tracker.png",
+    git: "https://github.com/huzai4a/js-projects/tree/main/listChecker",
+    content: <ModalContent 
+    desc="The project allows users to upload their Instagram data in order to identify individuals they follow who are not following them back. I felt like this was an inconvenience on instagram&apos;s part that could be satisfied through a simple site. By getting users to upload JSON data, the site efficiently analyzes this information without storing any personal data or compromising user privacy. The identification of unfollowers is done securely, ensuring that no sensitive information is retained during the process. To enhance user experience, I designed a fully responsive interface using HTML and CSS, which adjusts seamlessly across different devices and screen sizes, ensuring smooth navigation and easy interaction. This tool provides a simple yet effective solution for Instagram users looking to manage their follower lists more effectively."
+    />
+  },
+  {
+    category: 'Python',
+    title: 'Autonomous Item Sorting & Disposal',
+    src: "/assets/sorting-bot.png",
+    content: <ModalContent 
+    desc="I developed a track-following movement system for a simulated Quanser robot, ensuring smooth and precise control of the robot’s motions in various tasks. The movement system was integral to the robot’s ability to navigate its environment effectively, especially in conjunction with the bin detection system I helped implement. Utilizing both color and ultrasonic sensors, this detection system enabled the robot to identify and interact with specific bins, a critical feature for sorting and organizing items within the simulated environment. Additionally, I worked closely with the design team to develop a fully functioning robot dispenser system, which allowed the robot to efficiently deposit sorted items into designated bins. This collaborative effort ensured that the dispenser mechanism was aligned with the overall design goals, making the robot both practical and efficient in its operations. Through this project, we combined sensor integration, mechanical design, and teamwork to create a versatile, high-performing robotic system capable of complex tasks."
+    />
+  },
+  {
+    category: 'Unity, C#',
+    title: 'Alien Escape',
+    src: "/assets/alien-escape-sample.png",
+    git: "https://github.com/huzai4a/Alien-Escape",
+    content: <ModalContent 
+    desc="An alien has crash landed onto a planet, and they find themselves surrounded by unfamilliar terrain. On impact, the ship dissassembled and scattered pieces across town. Your job is to get the ship pieces and escape, dodging the humans standing in your way. This 2D topdown game was made using unity and C# with some friends. I took on key responsibilities in designing both the leaderboard and enemy AI functionality. The leaderboard tracks player scores and ranks them based on the time it takes to gather the ship pieces. For the enemy AI, I developed intelligent behaviors that actively challenge the player by patrolling the area, guarding ship parts, and adapting based on the player&apos;s actions. Working closely with collaborators, I explored the framing process of the project, ensuring that each team member’s input was integrated smoothly to shape the game's core mechanics and structure. One of the more intricate aspects was handling event-driven conditions, particularly when key inputs triggered specific player actions like dodging enemies or interacting with ship pieces. This ensured the gameplay was fluid, engaging, and responsive to player inputs, while keeping the challenge dynamic and fun."
+    />
+  },
+];
