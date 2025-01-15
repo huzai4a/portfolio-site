@@ -269,10 +269,6 @@ export const projects = [
       }
     />
   },
-  //   content: <ModalContent 
-  //   desc="Ink-Keys turns drawings into instruments using a webcam and hand tracking, offering a portable, affordable way to make music. Accessible for kids, beginners, and creatives alike! The idea for Ink-Keys came from the desire to make music accessible, affordable, and portable for everyone. The hefty price tag on pianos often makes music education inaccessible, discouraging beginners. Ink-Keys combines a child's love of drawing with the joy of playing music, fostering creativity and learning through fun. We wanted to eliminate the barriers by allowing users to draw their own piano and bring it to life anywhere, anytime. The project uses a webcam, phone or any camera available to detect a printed or drawn piano on paper, allowing users to learn, create and play around with a piano system, with realtime feedback. We built it using ReactJS and TailwindCSS for the frontend, Flask for the backend with SocketIO for real-time updates, OpenCV for webcam access and key detection, and TensorFlow and MediaPipe for hand tracking. Check out the demo video below to see it in action!"
-  //   />
-  // },
   {
     category: 'Node.JS, React.JS',
     title: 'Instagram Unfollow Tracker',
