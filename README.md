@@ -7,6 +7,6 @@ Some of the components I was particularly interested in using include:
 - Floating 'pill' navbar that only shows when entering page or scrolling up
 - Something in the background/graphics that add to the aesthetic of the landing screen
 - An interactive yet clean timeline that lays out the content with an easy to follow format
-- Some kind of carousel to display the projects
+- Some kind of carousel to display the projects, adding git links and a more info section
 
 In the creation of this site, I used a couple tutorials to get me up to speed on many of the things that react makes easy/efficient, and was also introduced to typescript, which was honestly a great decision as the security provided by the type definitions was great.
