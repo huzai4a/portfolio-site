@@ -270,6 +270,32 @@ export const projects = [
     />
   },
   {
+    category: 'Python, Open3D, C',
+    title: 'Automated Mapping System',
+    src: "/assets/room-mapping-visual.png",
+    git: "https://github.com/huzai4a/Room-Mapping-System",
+    content: <ModalContent 
+      desc={
+        <>
+            <strong>Room Mapping System</strong> is a personal project I built to explore how embedded systems can be used for real-time spatial awareness and mapping. At its core, it uses the <strong>VL53L1X time-of-flight sensor</strong> to measure distances and generate a 2D layout of a room or space. The system is powered by the <strong>MSP432E401Y microcontroller</strong>, which I programmed in C to handle sensor input, data processing, and output control.
+            <br /><br />
+            The motivation behind this project was to gain hands-on experience with hardware-level I2C communication, microcontroller programming, and integrating sensor data into a usable mapping interface. The idea was to simulate the core function of a LIDAR system, but on a smaller scale and with more accessible hardware.
+            <br /><br />
+            I structured the firmware into clean, modular components:  
+            <ul>
+              <li>A <strong>sensor module</strong> to handle VL53L1X communication</li>
+              <li>A <strong>UART module</strong> for serial data transmission</li>
+              <li><strong>System tick timers</strong> for precise timing</li>
+              <li><strong>LED feedback control</strong> for basic UI</li>
+            </ul>
+            The data from the ToF sensor is sent over UART, allowing me to visualize room boundaries or obstacles in a basic plotting environment. The system is flexible and can be extended further into robotics or autonomous navigation applications.
+            <br /><br />
+            Overall, this project helped me deepen my understanding of embedded systems, low-level communication protocols, and the challenges of real-world sensor integration.
+        </>
+      }
+    />
+  },
+  {
     category: 'Node.JS, React.JS',
     title: 'Instagram Unfollow Tracker',
     src: "/assets/instagram-unfollow-tracker.png",
