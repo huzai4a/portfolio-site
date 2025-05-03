@@ -55,7 +55,7 @@ const About = () => {
         <TbPointFilled className="mr-2 text-purple-100 " /> TensorFlow
       </li>
       <li className="flex items-center">
-        <TbPointFilled className="mr-2 text-purple-100 " /> Node.js
+        <TbPointFilled className="mr-2 text-purple-100 " /> Flask
       </li>
     </div>
   </ul>
