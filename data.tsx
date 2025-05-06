@@ -94,7 +94,7 @@ export const data = [
         <div className="flex gap-4 items-center justify-center w-full pt-5">
           <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
             <Image
-              src="/assets/arkhet_logo.jpg"
+              src="/assets/arkhet_logo.jpeg"
               alt="coding club logo"
               width={400} // Explicit width
               height={300} // Explicit height
