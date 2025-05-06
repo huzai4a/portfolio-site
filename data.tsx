@@ -68,6 +68,45 @@ export const aboutItems = {
 
 export const data = [
   {
+    title: "Full-Stack Developer Intern",
+    date: "Jan. 2025 - Apr. 2025",
+    location: "Remote, Canada",
+    content: (
+      <div className="font-geistSans">
+        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base pb-8 mb-8">
+          <h3>Summary:</h3>
+          <ul className="list-none text-gray-100 font-geistSans ml-5">
+            <li>
+              - Enhanced Arkhet AI’s web platform with animations, improved UI, and responsive design
+            </li>
+            <li>
+              - Designed and optimized a modular component architecture through agile weekly sprints 
+            </li>
+            <li>
+              - Iterated features continuously based on beta tester feedback and user interaction patterns
+            </li>
+          </ul>
+          <br />
+          As a Full-Stack Developer Intern at Arkhet AI, I contributed to the development of an interactive web platform that empowers users to prototype digital products quickly and intuitively. The platform allows users to build wireframes with drag-and-drop components, customize design systems, and generate interactive prototypes in one click. My work focused on improving the front-end experience—adding smooth animations, refining responsive behavior, and implementing stylistic enhancements to better align with user expectations. I collaborated with the product team during weekly sprints to redesign component architecture, enabling flexible, modular updates. Feedback gathered from early testers guided several iterative improvements I implemented, helping Arkhet AI remain agile in its development cycle and responsive to user needs.
+        </div>
+
+        {/* Flex container for images */}
+        <div className="flex gap-4 items-center justify-center w-full pt-5">
+          <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+            <Image
+              src="/assets/arkhet_logo.jpg"
+              alt="coding club logo"
+              width={400} // Explicit width
+              height={300} // Explicit height
+              className="img"
+            />
+          </div>
+        </div>
+      </div>
+
+    ),
+  },
+  {
     title: "Coding Club President",
     date: "Aug. 2022 - Jun. 2023",
     location: "Whitby, ON, Canada",
