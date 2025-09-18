@@ -69,45 +69,70 @@ export const aboutItems = {
 export const data = [
   {
     title: "Full-Stack Developer Intern",
-    date: "Jan. 2025 - Apr. 2025",
+    date: "May 2025 - Aug. 2025",
     location: "Remote, Canada",
     content: (
       <div className="font-geistSans">
         <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base pb-8 mb-8">
           <h3>Summary:</h3>
           <ul className="list-none text-gray-100 font-geistSans ml-5">
-            <li>
-              - Enhanced Arkhet AI’s web platform with animations, improved UI, and responsive design
-            </li>
-            <li>
-              - Designed and optimized a modular component architecture through agile weekly sprints 
-            </li>
-            <li>
-              - Iterated features continuously based on beta tester feedback and user interaction patterns
-            </li>
+            <li>- Refactored and optimized a legacy codebase, improving maintainability and lowering load times by 15%</li>
+            <li>- Built a conversational chatbot for FredAI that reduced API usage costs by 40%</li>
+            <li>- Added multilingual support to increase user adoption and broaden market reach</li>
           </ul>
           <br />
-          As a Full-Stack Developer Intern at Arkhet AI, I contributed to the development of an interactive web platform that empowers users to prototype digital products quickly and intuitively. The platform allows users to build wireframes with drag-and-drop components, customize design systems, and generate interactive prototypes in one click. My work focused on improving the front-end experience—adding smooth animations, refining responsive behavior, and implementing stylistic enhancements to better align with user expectations. I collaborated with the product team during weekly sprints to redesign component architecture, enabling flexible, modular updates. Feedback gathered from early testers guided several iterative improvements I implemented, helping Arkhet AI remain agile in its development cycle and responsive to user needs.
+          At myAIPathway I worked across front-end and back-end tasks to modernize an existing product and reduce operational costs. I focused on refactoring for maintainability and performance, implemented a cost-efficient conversational agent for FredAI, and integrated multilingual features to expand accessibility. Collaborating with senior engineers, I followed Agile practices and contributed to architecture and deployment decisions.
         </div>
 
-        {/* Flex container for images */}
         <div className="flex gap-4 items-center justify-center w-full pt-5">
           <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
             <Image
-              src="/assets/arkhet_logo.jpeg"
-              alt="coding club logo"
-              width={400} // Explicit width
-              height={300} // Explicit height
+              src="/assets/myaipathway.png"
+              alt="myAIPathway logo"
+              width={400}
+              height={400}
               className="img"
             />
           </div>
         </div>
       </div>
-
     ),
   },
+
   {
-    title: "Coding Club President",
+    title: "Frontend Developer Intern",
+    date: "Feb. 2025 - Apr. 2025",
+    location: "Remote, Canada",
+    content: (
+      <div className="font-geistSans">
+        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base pb-8 mb-8">
+          <h3>Summary:</h3>
+          <ul className="list-none text-gray-100 font-geistSans ml-5">
+            <li>- Improved Arkhet AI’s web platform with animations, UI polish, and responsive behavior</li>
+            <li>- Designed and optimized a modular component architecture during weekly sprints</li>
+            <li>- Iterated features continuously based on beta tester feedback</li>
+          </ul>
+          <br />
+          As a Frontend Developer Intern at Arkhet AI, I focused on enhancing the user experience by adding smooth animations, refining responsive layouts, and polishing visual design. I helped restructure components to be modular and reusable, collaborating with the product team in weekly sprints. Feedback from early testers informed iterative improvements that increased usability and consistency across the app.
+        </div>
+
+        <div className="flex gap-4 items-center justify-center w-full pt-5">
+          <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+            <Image
+              src="/assets/arkhet_logo.jpeg"
+              alt="Arkhet AI logo"
+              width={400}
+              height={300}
+              className="img"
+            />
+          </div>
+        </div>
+      </div>
+    ),
+  },
+
+  {
+    title: "Software Development Trainer",
     date: "Aug. 2022 - Jun. 2023",
     location: "Whitby, ON, Canada",
     content: (
@@ -124,17 +149,16 @@ export const data = [
             </li>
           </ul>
           <br />
-          Being the president of the coding club allowed me to be involved with software in a way I never had before. Being the one that students looked to for help applied pressure for me to have a better understanding of foundational HTML/CSS/JS. This understanding included syntax but also extended to logical issues, semantic errors, layout problems, and more. This gave me the opportunity to come up with troubleshooting strategies and also forced me to adapt and recognize bug causes regularly. As a team leader, I have successfully facilitated club meetings and events, ensuring effective collaboration and smooth execution. Additionally, I developed and delivered foundational lessons in HTML, CSS, and JavaScript to teach responsive website design, helping others build essential skills in web development.
+          At Sinclair Coding I developed and delivered foundational lessons in HTML, CSS, and JavaScript focused on responsive web design. I regularly assisted learners with debugging and semantic/layout issues, improving their coding confidence and project outcomes. This role strengthened my ability to communicate technical concepts and lead hands-on workshops.
         </div>
 
-        {/* Flex container for images */}
         <div className="flex gap-4 items-center justify-center w-full pt-5">
           <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
             <Image
               src="/assets/cc-logo.png"
-              alt="coding club logo"
-              width={300} // Explicit width
-              height={300} // Explicit height
+              alt="Sinclair Coding logo"
+              width={300}
+              height={300}
               className="img"
             />
           </div>
@@ -142,116 +166,102 @@ export const data = [
           <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
             <Image
               src="/assets/lesson-ex.png"
-              alt="lesson demo example"
-              width={300} // Explicit width
-              height={300} // Explicit height
+              alt="lesson example"
+              width={300}
+              height={300}
               className="img"
             />
           </div>
         </div>
       </div>
-
     ),
   },
-    {
-      title: "Policing Leadership Program",
-      date: "Jul. 2022 - Aug. 2022",
-      location: "Oshawa, ON, Canada",
-      content: (
-        <div className="font-geistSans">
-          <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base  mb-8">
-            <h3>Summary:</h3>
-            <ul className="list-none text-gray-100 font-geistSans ml-5">
-              <li>
-              - Worked as part of a team to facilitate a <a target="_blank" href='https://www.instagram.com/drps_official/p/Cf7PsdVL8Cj/' className='text-purple-100 font-medium underline decoration-navy-50 hover:decoration-purple-100 hover:decoration-solid'>Youth Forum</a>
-              </li>
-              <li>
-                - Participated in various leadership ventures
-              </li>
-              <li>
-              - Frequently planned/collaborated with a small team, furthering my communication skills
-              </li>
-            </ul>
-            <br />
-            This initiative drastically changed my outlook on communication, collaboration and leadership, all of which contribute to my skill as a developer. We worked in a tight-knit team, and this experience brought together people that were able to step up when their expertise were needed, which is something that is essential in software development. Throughout the program, I had many opportunities to lead the team and speak in public, which furthered my communication and leadership.
-          </div>
-          
-          {/* Flex container for images */}
-          <div className="flex gap-4 items-center justify-center w-full pt-5">
-            <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
-              <Image
-                src="/assets/durham-sign.png"
-                alt="youth in policing poster"
-                width={300} // Explicit width
-                height={300} // Explicit height
-                className="img"
-              />
-            </div>
 
-            <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
-              <Image
-                src="/assets/yip-poster.png"
-                alt="lesson demo example"
-                width={300} // Explicit width
-                height={300} // Explicit height
-                className="img"
-              />
-            </div>
+  {
+    title: "Youth in Policing Intern",
+    date: "Jul. 2022 - Aug. 2022",
+    location: "Oshawa, ON, Canada",
+    content: (
+      <div className="font-geistSans">
+        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base  mb-8">
+          <h3>Summary:</h3>
+          <ul className="list-none text-gray-100 font-geistSans ml-5">
+            <li>- Facilitated a youth forum with 550+ attendees (10% attendance increase vs previous year)</li>
+            <li>- Planned and coordinated youth-focused events and public speaking opportunities</li>
+            <li>- Strengthened teamwork, communication, and leadership skills</li>
+          </ul>
+          <br />
+          The Youth in Policing program with Durham Regional Police expanded my leadership and public-facing skills. I helped organize and facilitate a large youth forum, supported event coordination, and presented at public events—experiences that improved my communication and team collaboration.
+        </div>
+
+        <div className="flex gap-4 items-center justify-center w-full pt-5">
+          <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+            <Image
+              src="/assets/durham-sign.png"
+              alt="Durham Regional Police sign"
+              width={300}
+              height={300}
+              className="img"
+            />
+          </div>
+
+          <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+            <Image
+              src="/assets/yip-poster.png"
+              alt="Youth in Policing poster"
+              width={300}
+              height={300}
+              className="img"
+            />
           </div>
         </div>
-      ),
-    },
-    {
-      title: "Digitera Interactive",
-      date: "Jan. 2022 - Jun. 2022",
-      location: "Remote, Canada",
-      content: (
-        <div className="font-geistSans">
-          <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base  mb-8">
-            <h3>Summary:</h3>
-            <ul className="list-none text-gray-100 font-geistSans ml-5">
-              <li>
-                -  Worked on preventing SQL injection in backend connections with PHP PDO protection
-              </li>
-              <li>
-                - Refurbished a deprecated login system to use in newer web apps
-              </li>
-              <li>
-                - Worked on integrating various features into existing event site
-              </li>
-            </ul>
-            <br />
-            During my time at Digitera, I had the opportunity to work on an event management system with a team of 3 interns and a senior developer. This experience allowed for great mentoring and learning of common SEO practices, which was Digitera&apos;s specialty. Also, we were given a login system with a faulty JSON token method, which we used to create an improved version. I later developed backend database connections, ensuring secure data transmission with PHP PDO protection. This experience helped me deepen my understanding of backend processes and security measures.
-            <br /><br />
-            Additionally, I worked on integrating various features into existing websites, enhancing their functionality without disrupting the current structure. These features included changing the parameters necessary when adding events, managing the way event deletion was performer, and more. This role also gave me the chance to familiarize myself with GitHub and the typical workflow of large-scale projects, providing me hands-on experience in both frontend and backend development.
+      </div>
+    ),
+  },
+
+  {
+    title: "Software Engineering Intern",
+    date: "Feb. 2022 - Jun. 2022",
+    location: "Ottawa, ON, Canada",
+    content: (
+      <div className="font-geistSans">
+        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base  mb-8">
+          <h3>Summary:</h3>
+          <ul className="list-none text-gray-100 font-geistSans ml-5">
+            <li>- Improved event system UI using Vue.js, increasing user engagement by ~15%</li>
+            <li>- Secured login/registration flows using parameterized queries (PDO) in PHP</li>
+            <li>- Implemented backend improvements under senior developer guidance</li>
+          </ul>
+          <br />
+          At Digitera Interactive I worked on an event management system, improving the frontend experience with Vue.js and hardening backend authentication using PDO parameterized queries. I collaborated with senior developers to integrate features without disrupting existing functionality and learned industry workflows using GitHub.
+        </div>
+
+        <div className="flex gap-4 items-center justify-center w-full pt-5">
+          <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+            <Image
+              src="/assets/digitera-landing.png"
+              alt="Digitera landing"
+              width={300}
+              height={300}
+              className="img"
+            />
           </div>
 
-          {/* Flex container for images */}
-          <div className="flex gap-4 items-center justify-center w-full pt-5">
-            <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
-              <Image
-                src="/assets/digitera-landing.png"
-                alt="digitera home page"
-                width={300} // Explicit width
-                height={300} // Explicit height
-                className="img"
-              />
-            </div>
-
-            <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
-              <Image
-                src="/assets/digitera-techs-stacked.png"
-                alt="languages used"
-                width={300} // Explicit width
-                height={300} // Explicit height
-                className="img"
-              />
-            </div>
+          <div className="flex-1 max-w-sm lg:max-w-md shadow-lg drop-shadow-2xl" style={{borderRadius:'10px', overflow: 'hidden'}}>
+            <Image
+              src="/assets/digitera-techs-stacked.png"
+              alt="Digitera tech stack"
+              width={300}
+              height={300}
+              className="img"
+            />
           </div>
         </div>
-      ),
-    },
-  ];
+      </div>
+    ),
+  },
+];
+
 
 interface ModalContentProps {
   desc: React.ReactNode | string;
