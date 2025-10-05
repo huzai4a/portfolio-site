@@ -177,9 +177,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-gray-800">
       <div
       ref={modalRef} //attach ref to modal for outside click 
-      className="relative bg-white dark:bg-navy-50 h-fit max-w-[95dvw] md:max-w-[75dvw] lg:max-w-[60dvw] w-full my-10 p-4 md:p-10 rounded-3xl font-sans shadow-lg overflow-y-auto max-h-[80dvh]">
+      className="relative bg-navy-50 h-fit max-w-[95dvw] md:max-w-[75dvw] lg:max-w-[60dvw] w-full my-10 p-4 md:p-10 rounded-3xl font-sans shadow-lg overflow-y-auto max-h-[80dvh]">
         <button onClick={onClose} className="absolute top-4 right-4 z-[1000]">
-          <IconX className="h-10 w-10 font-bold text-neutral-100 dark:text-purple-100 hover:brightness-75" />
+          <IconX className="h-10 w-10 font-bold text-purple-100 hover:brightness-75" />
         </button>
         {children}
       </div>
@@ -233,12 +233,12 @@ export const Card = ({
         layoutId={layout ? `card-${card.title}` : undefined}
         title="learn more"
         onClick={handleOpen}
-        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-[28rem] w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 hover:brightness-150 transition duration-300"
+        className="rounded-3xl bg-neutral-900 h-[28rem] w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 hover:brightness-150 transition duration-300"
       >
         <div className="relative z-40 p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="dark:text-purple-100 text-sm md:text-base font-medium font-sans text-left"
+            className="text-purple-100 text-sm md:text-base font-medium font-sans text-left"
           >
             {card.category}
           </motion.p>
@@ -277,13 +277,13 @@ export const Card = ({
         >
           <motion.p
             layoutId={layout ? `category-${card.title}` : undefined}
-            className="text-base font-medium dark:text-purple-100"
+            className="text-base font-medium text-purple-100"
           >
             {card.category}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white-50"
+            className="text-2xl md:text-5xl font-semibold mt-4 text-white-50"
           >
             {card.title}
           </motion.p>

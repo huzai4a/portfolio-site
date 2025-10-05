@@ -127,7 +127,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "modal-setter hidden sm:flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white-50/[0.2] rounded-full dark:bg-navy-100 bg-white-50 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[800] pr-2 px-8 py-2 items-center justify-center space-x-4",
+          "modal-setter hidden sm:flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-white-50/[0.2] rounded-full bg-navy-100 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[800] pr-2 px-8 py-2 items-center justify-center space-x-4",
           className
         )}
       >
@@ -137,8 +137,8 @@ export const FloatingNav = ({
             href={navItem.link}
             className={cn(
               navItem.active ?
-              "border text-sm font-medium relative border-neutral-200 dark:border-neutral-300/[0.2] text-black dark:text-white-50 px-4 py-2 rounded-full" :
-              "relative dark:text-white-50 items-center flex space-x-1 text-neutral-600 hover:text-purple-50 transition duration-100"
+              "border text-sm font-medium relative border-neutral-200 border-neutral-300/[0.2] text-white-50 px-4 py-2 rounded-full" :
+              "relative text-white-50 items-center flex space-x-1 hover:text-purple-50 transition duration-100"
             )} // Apply active styling here
           >
             <span className="hidden sm:block text-sm">{navItem.name}</span>

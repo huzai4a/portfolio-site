@@ -25,7 +25,7 @@ export const aboutItems = {
 // const TimelineContent = ({summary, content, img1, img2}:TimelineContentProps) => {
 //   return (
 //     <div className="font-geistSans">
-//         <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base pb-8 mb-8">
+//         <div className=" text-gray-100 text-sm md:text-base pb-8 mb-8">
 //           <h3>Summary:</h3>
 //           <ul className="list-none text-gray-100 font-geistSans ml-5">
 //             {summary.map((item, index) => {
@@ -73,7 +73,7 @@ export const data = [
     location: "Remote, Canada",
     content: (
       <div className="font-geistSans">
-        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base pb-8 mb-8">
+        <div className=" text-gray-100 text-sm md:text-base pb-8 mb-8">
           <h3>Summary:</h3>
           <ul className="list-none text-gray-100 font-geistSans ml-5">
             <li>- Refactored and optimized a legacy codebase, improving maintainability and lowering load times by 15%</li>
@@ -105,7 +105,7 @@ export const data = [
     location: "Remote, Canada",
     content: (
       <div className="font-geistSans">
-        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base pb-8 mb-8">
+        <div className=" text-gray-100 text-sm md:text-base pb-8 mb-8">
           <h3>Summary:</h3>
           <ul className="list-none text-gray-100 font-geistSans ml-5">
             <li>- Improved Arkhet AI’s web platform with animations, UI polish, and responsive behavior</li>
@@ -137,7 +137,7 @@ export const data = [
     location: "Whitby, ON, Canada",
     content: (
       <div className="font-geistSans">
-        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base pb-8 mb-8">
+        <div className=" text-gray-100 text-sm md:text-base pb-8 mb-8">
           <h3>Summary:</h3>
           <ul className="list-none text-gray-100 font-geistSans ml-5">
             <li>
@@ -183,7 +183,7 @@ export const data = [
     location: "Oshawa, ON, Canada",
     content: (
       <div className="font-geistSans">
-        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base  mb-8">
+        <div className=" text-gray-100 text-sm md:text-base  mb-8">
           <h3>Summary:</h3>
           <ul className="list-none text-gray-100 font-geistSans ml-5">
             <li>- Facilitated a youth forum with 550+ attendees (10% attendance increase vs previous year)</li>
@@ -225,7 +225,7 @@ export const data = [
     location: "Ottawa, ON, Canada",
     content: (
       <div className="font-geistSans">
-        <div className="text-neutral-800 dark:text-gray-100 text-sm md:text-base  mb-8">
+        <div className=" text-gray-100 text-sm md:text-base  mb-8">
           <h3>Summary:</h3>
           <ul className="list-none text-gray-100 font-geistSans ml-5">
             <li>- Improved event system UI using Vue.js, increasing user engagement by ~15%</li>
@@ -271,9 +271,9 @@ const ModalContent = ({ desc }:ModalContentProps) => {
     return (
       <>
         <div
-          className="bg-[#F5F5F7] dark:bg-navy-50"
+          className="bg-navy-50"
         >
-          <p className="dark:text-gray-100 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          <p className="text-gray-100 text-base md:text-2xl font-sans max-w-3xl mx-auto">
             {desc}
           </p>
         </div>
@@ -326,16 +326,16 @@ export const projects = [
     content: <ModalContent 
       desc={
         <>
-            <strong>Room Mapping System</strong> is a personal project I built to explore how embedded systems can be used for real-time spatial awareness and mapping. At its core, it uses the <strong>VL53L1X time-of-flight sensor</strong> to measure distances and generate a 2D layout of a room or space. The system is powered by the <strong>MSP432E401Y microcontroller</strong>, which I programmed in C to handle sensor input, data processing, and output control.
+            Room Mapping System is a personal project I built to explore how embedded systems can be used for real-time spatial awareness and mapping. At its core, it uses the VL53L1X time-of-flight sensor to measure distances and generate a 2D layout of a room or space. The system is powered by the MSP432E401Y microcontroller, which I programmed in C to handle sensor input, data processing, and output control.
             <br /><br />
             The motivation behind this project was to gain hands-on experience with hardware-level I2C communication, microcontroller programming, and integrating sensor data into a usable mapping interface. The idea was to simulate the core function of a LIDAR system, but on a smaller scale and with more accessible hardware.
             <br /><br />
             I structured the firmware into clean, modular components:  
             <ul>
-              <li>A <strong>sensor module</strong> to handle VL53L1X communication</li>
-              <li>A <strong>UART module</strong> for serial data transmission</li>
-              <li><strong>System tick timers</strong> for precise timing</li>
-              <li><strong>LED feedback control</strong> for basic UI</li>
+              <li>A sensor module to handle VL53L1X communication</li>
+              <li>A UART module for serial data transmission</li>
+              <li>System tick timers for precise timing</li>
+              <li>LED feedback control for basic UI</li>
             </ul>
             The data from the ToF sensor is sent over UART, allowing me to visualize room boundaries or obstacles in a basic plotting environment. The system is flexible and can be extended further into robotics or autonomous navigation applications.
             <br /><br />
